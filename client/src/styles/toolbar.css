@@ -1,0 +1,78 @@
+.toolbar {
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    //box-shadow: 0 4px 5px gray;
+
+    z-index: 999;
+}
+.toolbar__btn {
+    height: 25px;
+    width: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-size: cover;
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+}
+
+.toolbar__btn.active:after {
+    position: absolute;
+    content: '';
+    border-bottom: 3px dashed gray;
+    width: 70%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    left: 50%;
+}
+.toolbar .brush {
+    background: url('../assets/img/brush.png') no-repeat center center;
+}
+.toolbar .rect {
+    background: url('../assets/img/rect.png') no-repeat center center;
+}
+.toolbar .circle {
+    background: url('../assets/img/circle.png') no-repeat center center;
+}
+.toolbar .eraser {
+    background: url('../assets/img/eraser.png') no-repeat center center;
+}
+.toolbar .line {
+    background: url('../assets/img/line.png') no-repeat center center;
+}
+.toolbar .undo {
+    margin-left: auto;
+    background: url('../assets/img/undo.png') no-repeat center center;
+}
+.toolbar .redo {
+    background: url('../assets/img/redo.png') no-repeat center center;
+}
+.toolbar .save {
+    background: url('../assets/img/save.png') no-repeat center center;
+    margin-right: 10px;
+}
+.setting-bar {
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    //box-shadow: 0 4px 5px gray;
+    //box-shadow: 0px 14px 14px 0px rgba(34, 60, 80, 0.2);
+    top: 50px;
+}
+
+.setting-bar label{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.setting-bar #line-width{
+    width: 40px;
+}
